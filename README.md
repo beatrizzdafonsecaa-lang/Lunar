@@ -106,17 +106,11 @@ A identidade visual foi inspirada no ambiente espacial e em tecnologias futurist
 
 ## 👥 Integrantes
 
-* Beatriz Fonseca - RM572180
+* Beatriz Fonseca — RM572180
 * Ana Rubia — RM573171
 * Edu Éder — RM573260
 * Luana Oliveira — RM571273
 * Patrick Souza — RM572748
-
----
-
-## 📹 Vídeo Pitch
-
-🔗 (Adicionar link do vídeo aqui)
 
 ---
 
