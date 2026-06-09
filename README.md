@@ -6,7 +6,7 @@ Projeto Global Solution - Lunar
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 O **LUNAR** é uma plataforma desenvolvida para monitorar e gerenciar recursos essenciais de uma colônia lunar.
 
@@ -16,7 +16,7 @@ Seu principal objetivo é centralizar informações sobre **água, energia, oxig
 
 ---
 
-## 🎯 Problema
+## Problema
 
 Em uma colônia lunar, recursos como **água, energia e oxigênio são limitados** e precisam ser monitorados constantemente.
 
@@ -28,7 +28,7 @@ A falta de controle pode gerar:
 
 ---
 
-## 🚀 Solução
+## Solução
 
 O **LUNAR** oferece uma interface intuitiva que permite:
 
@@ -41,7 +41,7 @@ Facilitando, assim, o gerenciamento eficiente dos recursos da colônia.
 
 ---
 
-## 🖥️ Funcionalidades
+## Funcionalidades
 
 * 📊 Dashboard geral da colônia
 * 💧 Monitoramento de água
@@ -53,7 +53,7 @@ Facilitando, assim, o gerenciamento eficiente dos recursos da colônia.
 
 ---
 
-## 💧 Gestão Hídrica
+## Gestão Hídrica
 
 A área de Gestão Hídrica permite:
 
@@ -65,18 +65,18 @@ A área de Gestão Hídrica permite:
 
 ---
 
-## 🎨 Design e UX
+## Design e UX
 
 A identidade visual foi inspirada no ambiente espacial e em tecnologias futuristas.
 
-### 🎨 Paleta de Cores
+### Paleta de Cores
 
 * Roxo: `#964FAE`
 * Azul: `#547AAB`
 * Preto espacial
 * Branco para contraste
 
-### 🎯 Objetivos de UX
+### Objetivos de UX
 
 * Navegação intuitiva
 * Leitura rápida das informações
@@ -85,7 +85,7 @@ A identidade visual foi inspirada no ambiente espacial e em tecnologias futurist
 
 ---
 
-## 🌍 ODS Relacionados
+## ODS Relacionados
 
 * **ODS 9 – Indústria, Inovação e Infraestrutura**
   Uso da tecnologia para gestão inteligente de recursos
@@ -95,7 +95,7 @@ A identidade visual foi inspirada no ambiente espacial e em tecnologias futurist
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * HTML5
 * CSS3
@@ -104,7 +104,7 @@ A identidade visual foi inspirada no ambiente espacial e em tecnologias futurist
 
 ---
 
-## 👥 Integrantes
+## Integrantes
 
 * Beatriz Fonseca — RM572180
 * Ana Rubia — RM573171
@@ -115,7 +115,7 @@ A identidade visual foi inspirada no ambiente espacial e em tecnologias futurist
 ---
 
 
-## 📌 Conclusão
+## Conclusão
 
 O **LUNAR** foi desenvolvido para demonstrar como a tecnologia pode auxiliar na gestão eficiente de recursos em ambientes extremos.
 
