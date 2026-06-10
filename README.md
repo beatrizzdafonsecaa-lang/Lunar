@@ -104,6 +104,7 @@ A identidade visual foi inspirada no ambiente espacial e em tecnologias futurist
 
 ## Desenvolvido por
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/254772449?s=400&u=9d46acb8d37f9ebc0cfd7be378650033e373a5ad&v=4" width=115><br><sub>Beatriz Fonseca</sub>](https://github.com/beatrizzdafonsecaa-lang) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/255619104?v=4" width=115><br><sub>Patrick Souza</sub>](https://github.com/patricksouza0331-coder) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/89053650?v=4" width=115><br><sub>Luana Silva</sub>](https://github.com/luanaodss) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/270194542?v=4" width=115><br><sub>Edu Éder Batagelo</sub>](https://github.com/duduzin6767)  |   [<img loading="lazy" src="https://avatars.githubusercontent.com/u/265393294?v=4" width=115><br><sub>Ana Rúbia</sub>](https://github.com/annarubiaoliveira88) 
+| :---: | :---: | :---: | :---: | :---: |
 ---
 
 ## Conclusão
