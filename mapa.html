@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunar — Mapa da Colônia</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mapa.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar__section">
+      <p class="sidebar__label">Painel inicial</p>
+      <ul class="sidebar__nav">
+        <li><a href="index.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Dashboard</span></a></li>
+        <li><a href="energia.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>Energia</span></a></li>
+        <li><a href="agua.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg><span>Água</span></a></li>
+        <li><a href="oxigenio.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/></svg><span>Oxigênio</span></a></li>
+        <li><a href="alimento.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15.4 15.4l4.6 4.6"/><path d="M8.5 8.5l7.9 7.9"/><path d="M6.5 6.5l2 2"/><circle cx="5" cy="5" r="3"/></svg><span>Alimento</span></a></li>
+        <li><a href="ambiente.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg><span>Ambiente</span></a></li>
+      </ul>
+    </div>
+    <div class="sidebar__section">
+      <p class="sidebar__label">Operações</p>
+      <ul class="sidebar__nav">
+        <li><a href="alertas.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>Alertas</span></a></li>
+        <li><a href="mapa.html" class="sidebar__link sidebar__link--active"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg><span>Mapa</span></a></li>
+        <li><a href="relatorios.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Relatórios</span></a></li>
+      </ul>
+    </div>
+    <div class="sidebar__logo"><img src="assets/logo-lunar.png" alt="Lunar" class="sidebar__logo-img"></div>
+  </aside>
+
+  <main class="main">
+    <header class="page-header">
+      <h1 class="page-header__title">Mapa da Colônia</h1>
+      <p class="page-header__subtitle">Visualize os principais pontos de monitoramento ambiental em tempo real.</p>
+    </header>
+
+    <section class="map-wrap">
+      <div class="map-wrap__surface"></div>
+      <div class="map-wrap__overlay"></div>
+      <div class="map-wrap__grid"></div>
+
+      <div class="map-zoom"><button type="button">+</button><button type="button">−</button></div>
+
+      <div class="map-pin map-pin--blue" style="top:10%;left:8%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="map-pin__label"><strong>Estação Meteorológica</strong><span>Operacional</span></div>
+      </div>
+      <div class="map-pin map-pin--blue" style="top:8%;left:38%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M3 10h18"/><path d="M12 16v4"/></svg></div>
+        <div class="map-pin__label"><strong>Painéis Solares Norte</strong><span>Operacional</span></div>
+      </div>
+      <div class="map-pin map-pin--blue" style="top:12%;right:10%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div>
+        <div class="map-pin__label"><strong>Reservatório Principal</strong><span>Nível: 78%</span></div>
+      </div>
+      <div class="map-pin map-pin--green" style="top:42%;left:20%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M4 14c7 0 8-8 16-8 0 9-5 14-13 14"/></svg></div>
+        <div class="map-pin__label"><strong>Estufa Hidropônica 1</strong><span>Ambiente ideal</span></div>
+      </div>
+      <div class="map-pin map-pin--green map-pin--active" style="top:45%;left:46%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M3 11L12 3l9 8"/><path d="M5 10v10h14V10"/></svg></div>
+        <div class="map-pin__label"><strong>Habitação Central</strong><span>Conforto: 84</span></div>
+      </div>
+      <div class="map-pin map-pin--blue" style="top:32%;right:22%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2"/></svg></div>
+        <div class="map-pin__label"><strong>Gerador de Oxigênio</strong><span>Produção normal</span></div>
+      </div>
+      <div class="map-pin map-pin--yellow" style="top:68%;left:10%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M8 10a4 4 0 118 0c0 2-1 3-2 4v2h-4v-2c-1-1-2-2-2-4z"/><path d="M10 21h4"/></svg></div>
+        <div class="map-pin__label"><strong>Torres de Iluminação</strong><span>Operacional</span></div>
+      </div>
+      <div class="map-pin map-pin--green" style="top:70%;left:34%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M4 20h16V8H4z"/><path d="M8 8V4h8v4"/></svg></div>
+        <div class="map-pin__label"><strong>Fábrica de Alimentos</strong><span>Produção normal</span></div>
+      </div>
+      <div class="map-pin map-pin--purple" style="top:72%;left:56%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div>
+        <div class="map-pin__label"><strong>Reservatório Secundário</strong><span>Nível: 56%</span></div>
+      </div>
+      <div class="map-pin map-pin--cyan" style="top:75%;right:8%">
+        <div class="map-pin__icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div>
+        <div class="map-pin__label"><strong>Reservatório de Reserva</strong><span>Nível: 34%</span></div>
+      </div>
+
+      <aside class="map-side map-side--layers">
+        <h3>Camadas</h3>
+        <div class="map-side__item" style="color:#fff"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/></svg>Todas</div>
+        <div class="map-side__item" style="color:#38bdf8"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>Água</div>
+        <div class="map-side__item" style="color:#38bdf8"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/></svg>Oxigênio</div>
+        <div class="map-side__item" style="color:#facc15"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Energia</div>
+        <div class="map-side__item" style="color:#22c55e"><svg viewBox="0 0 24 24"><path d="M4 14c7 0 8-8 16-8"/></svg>Alimento</div>
+        <div class="map-side__item" style="color:#22c55e"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg>Ambiente</div>
+        <div class="map-side__item" style="color:#94a3b8"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><rect x="14" y="14" width="6" height="6"/></svg>Infraestrutura</div>
+      </aside>
+
+      <aside class="map-side map-side--legend">
+        <h3>Legenda</h3>
+        <div class="map-side__item" style="color:#38bdf8"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>Água</div>
+        <div class="map-side__item" style="color:#38bdf8"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/></svg>Oxigênio</div>
+        <div class="map-side__item" style="color:#facc15"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Energia</div>
+        <div class="map-side__item" style="color:#22c55e"><svg viewBox="0 0 24 24"><path d="M4 14c7 0 8-8 16-8"/></svg>Alimentos</div>
+        <div class="map-side__item" style="color:#22c55e"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg>Ambiente</div>
+        <div class="map-side__item" style="color:#94a3b8"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/></svg>Infraestrutura</div>
+      </aside>
+
+      <button type="button" class="map-center-btn">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+        Centralizar mapa
+      </button>
+    </section>
+
+    <section class="map-detail">
+      <div class="map-detail__title">
+        Habitação Central
+        <span class="map-detail__dot"></span>
+        <span class="map-detail__status">operacional</span>
+      </div>
+      <div class="map-metrics">
+        <article class="map-metric">
+          <h4>Conforto Ambiental</h4>
+          <div class="comfort-ring">84<small>Ideal</small></div>
+        </article>
+        <article class="map-metric">
+          <svg class="map-metric__icon" viewBox="0 0 24 24"><path d="M12 2v13"/><circle cx="12" cy="17" r="4"/></svg>
+          <h4>Temperatura</h4>
+          <div class="map-metric__value">22.4°C</div>
+          <div class="map-metric__note map-metric__note--green">Ideal</div>
+        </article>
+        <article class="map-metric">
+          <svg class="map-metric__icon" style="stroke:#38bdf8" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2"/></svg>
+          <h4>Qualidade do Ar</h4>
+          <div class="map-metric__value">92</div>
+          <div class="map-metric__note map-metric__note--green">Boa</div>
+          <div class="map-metric__bars map-metric__bars--blue"><i style="height:16px"></i><i style="height:22px"></i><i style="height:28px"></i><i style="height:24px"></i><i style="height:30px"></i><i style="height:26px"></i><i style="height:32px"></i></div>
+        </article>
+        <article class="map-metric">
+          <svg class="map-metric__icon" style="stroke:#a855f7" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+          <h4>Umidade</h4>
+          <div class="map-metric__value">45%</div>
+          <div class="map-metric__note map-metric__note--purple">Ideal</div>
+        </article>
+        <article class="map-metric">
+          <svg class="map-metric__icon" style="stroke:#facc15" viewBox="0 0 24 24"><path d="M8 10a4 4 0 118 0c0 2-1 3-2 4v2h-4v-2c-1-1-2-2-2-4z"/><path d="M10 21h4"/></svg>
+          <h4>Iluminação</h4>
+          <div class="map-metric__value">350 lux</div>
+          <div class="map-metric__note map-metric__note--yellow">Ótima</div>
+          <div class="map-metric__bars map-metric__bars--yellow"><i style="height:18px"></i><i style="height:24px"></i><i style="height:30px"></i><i style="height:26px"></i><i style="height:32px"></i><i style="height:28px"></i></div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

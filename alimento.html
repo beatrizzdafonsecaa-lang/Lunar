@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunar — Alimento</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/alimento.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       SIDEBAR — Navegação principal
+       ════════════════════════════════════════ -->
+  <aside class="sidebar">
+    <div class="sidebar__section">
+      <p class="sidebar__label">Painel inicial</p>
+      <ul class="sidebar__nav">
+        <li><a href="index.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Dashboard</span></a></li>
+        <li><a href="energia.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>Energia</span></a></li>
+        <li><a href="agua.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg><span>Água</span></a></li>
+        <li><a href="oxigenio.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/></svg><span>Oxigênio</span><span class="sidebar__dot sidebar__dot--orange"></span></a></li>
+        <!-- Página atual: Alimento -->
+        <li><a href="alimento.html" class="sidebar__link sidebar__link--active"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15.4 15.4l4.6 4.6"/><path d="M8.5 8.5l7.9 7.9"/><path d="M6.5 6.5l2 2"/><circle cx="5" cy="5" r="3"/></svg><span>Alimento</span></a></li>
+        <li><a href="ambiente.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg><span>Ambiente</span><span class="sidebar__dot sidebar__dot--red"></span></a></li>
+      </ul>
+    </div>
+    <div class="sidebar__section">
+      <p class="sidebar__label">Operações</p>
+      <ul class="sidebar__nav">
+        <li><a href="alertas.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>Alertas</span></a></li>
+        <li><a href="mapa.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg><span>Mapa</span></a></li>
+        <li><a href="relatorios.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Relatórios</span></a></li>
+      </ul>
+    </div>
+    <div class="sidebar__logo"><img src="assets/logo-lunar.png" alt="Lunar" class="sidebar__logo-img"></div>
+  </aside>
+
+  <main class="main">
+
+    <!-- Cabeçalho -->
+    <header class="header">
+      <div>
+        <p class="header__breadcrumb">Alimento</p>
+        <h1 class="header__title">Controle de Alimentação</h1>
+      </div>
+      <div class="header__right">
+        <div class="badge-live"><span class="badge-live__dot"></span>Ao vivo</div>
+        <span class="header__date">02/06/2026</span>
+      </div>
+    </header>
+
+    <!-- Status geral -->
+    <section class="food-status">
+      <div class="food-status__header">
+        <h2 class="food-status__title">Status geral</h2>
+        <p class="food-status__subtitle">Estoque consolidado da colônia</p>
+      </div>
+
+      <div class="food-status__grid">
+
+        <!-- Card esquerdo: reservas + métricas -->
+        <article class="food-stock">
+
+          <div class="food-reserve">
+            <div class="food-reserve__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15.4 15.4l4.6 4.6"/><path d="M8.5 8.5l7.9 7.9"/><path d="M6.5 6.5l2 2"/><circle cx="5" cy="5" r="3"/></svg>
+              Nível atual de reservas
+            </div>
+            <div class="food-reserve__value">85%</div>
+            <p class="food-reserve__desc">Estoque total disponível</p>
+            <p class="food-reserve__note">Sem variações nas últimas 6h</p>
+            <div class="food-reserve__progress">
+              <div class="food-reserve__progress-labels">
+                <span>0%</span>
+                <span>100%</span>
+              </div>
+              <div class="food-reserve__progress-bar">
+                <div class="food-reserve__progress-fill"></div>
+                <div class="food-reserve__progress-thumb"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="food-stats">
+            <div class="food-stat">
+              <p class="food-stat__label">Dias de reserva</p>
+              <p class="food-stat__value">42 dias</p>
+              <p class="food-stat__trend food-stat__trend--down">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                Redução de 3%
+              </p>
+            </div>
+            <div class="food-stat">
+              <p class="food-stat__label">Consumo diário</p>
+              <p class="food-stat__value">18 kg/dia</p>
+              <p class="food-stat__trend food-stat__trend--up">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+                Dentro do planejado
+              </p>
+            </div>
+            <div class="food-stat">
+              <p class="food-stat__label">Produção hidropônica</p>
+              <p class="food-stat__value">6 kg/dia</p>
+              <p class="food-stat__trend food-stat__trend--up">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+                +0.5 esta semana
+              </p>
+            </div>
+            <div class="food-stat">
+              <p class="food-stat__label">Dependência de estoque</p>
+              <p class="food-stat__value">67%</p>
+              <p class="food-stat__trend food-stat__trend--down">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                Meta: abaixo de 50%
+              </p>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- Card direito: gráfico de barras -->
+        <article class="food-chart">
+          <div class="food-chart__tabs">
+            <button class="food-chart__tab food-chart__tab--active">Últimos dias</button>
+            <button class="food-chart__tab">Última semana</button>
+            <button class="food-chart__tab">Último mês</button>
+          </div>
+          <div class="food-chart__bars">
+            <div class="food-chart__bar-wrap">
+              <div class="food-chart__bar food-chart__bar--1"></div>
+              <span class="food-chart__axis">Seg 23</span>
+            </div>
+            <div class="food-chart__bar-wrap">
+              <div class="food-chart__bar food-chart__bar--2"></div>
+              <span class="food-chart__axis">Ter 24</span>
+            </div>
+            <div class="food-chart__bar-wrap">
+              <div class="food-chart__bar food-chart__bar--3"></div>
+              <span class="food-chart__axis">Qua 25</span>
+            </div>
+            <div class="food-chart__bar-wrap">
+              <div class="food-chart__bar food-chart__bar--4"></div>
+              <span class="food-chart__axis">Qui 26</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Comidas disponíveis -->
+    <section class="food-list-section">
+      <div class="food-list__header">
+        <h2 class="food-list__title">Comidas disponíveis</h2>
+        <label class="food-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" class="food-search__input" placeholder="Pesquisar comidas">
+        </label>
+      </div>
+
+      <!-- Accordion com HTML puro (<details>) -->
+      <div class="food-accordion">
+
+        <details class="food-accordion__item">
+          <summary class="food-accordion__summary">
+            <span class="food-accordion__summary-text">Alface hidropônica<span class="food-accordion__badge food-accordion__badge--ok">Em estoque</span></span>
+            <svg class="food-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="food-accordion__content">
+            Folhas cultivadas no módulo B2. Colheita diária com ciclo de 28 dias. Principal fonte de fibras e vitamina K da colônia.
+            <dl class="food-accordion__meta">
+              <div><dt>Disponível</dt><dd>124 kg</dd></div>
+              <div><dt>Origem</dt><dd>Hidroponia B2</dd></div>
+              <div><dt>Validade</dt><dd>5 dias</dd></div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="food-accordion__item">
+          <summary class="food-accordion__summary">
+            <span class="food-accordion__summary-text">Proteína de soja processada<span class="food-accordion__badge food-accordion__badge--ok">Em estoque</span></span>
+            <svg class="food-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="food-accordion__content">
+            Base proteica reidratável para refeições compostas. Armazenada em câmaras seladas do setor industrial.
+            <dl class="food-accordion__meta">
+              <div><dt>Disponível</dt><dd>380 kg</dd></div>
+              <div><dt>Origem</dt><dd>Processamento C1</dd></div>
+              <div><dt>Validade</dt><dd>180 dias</dd></div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="food-accordion__item">
+          <summary class="food-accordion__summary">
+            <span class="food-accordion__summary-text">Ração sintética tipo A<span class="food-accordion__badge food-accordion__badge--ok">Em estoque</span></span>
+            <svg class="food-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="food-accordion__content">
+            Mistura balanceada de macro e micronutrientes para consumo diário padronizado. Usada nas refeições do refeitório central.
+            <dl class="food-accordion__meta">
+              <div><dt>Disponível</dt><dd>210 kg</dd></div>
+              <div><dt>Origem</dt><dd>Laboratório A4</dd></div>
+              <div><dt>Validade</dt><dd>90 dias</dd></div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="food-accordion__item">
+          <summary class="food-accordion__summary">
+            <span class="food-accordion__summary-text">Tubérculos desidratados<span class="food-accordion__badge food-accordion__badge--low">Estoque baixo</span></span>
+            <svg class="food-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="food-accordion__content">
+            Batata e inhame liofilizados para reserva estratégica. Requer reidratação antes do consumo. Nível abaixo do recomendado.
+            <dl class="food-accordion__meta">
+              <div><dt>Disponível</dt><dd>48 kg</dd></div>
+              <div><dt>Origem</dt><dd>Reserva D1</dd></div>
+              <div><dt>Validade</dt><dd>365 dias</dd></div>
+            </dl>
+          </div>
+        </details>
+
+        <details class="food-accordion__item">
+          <summary class="food-accordion__summary">
+            <span class="food-accordion__summary-text">Suplemento nutricional base<span class="food-accordion__badge food-accordion__badge--ok">Em estoque</span></span>
+            <svg class="food-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="food-accordion__content">
+            Cápsulas com vitaminas D, B12 e minerais essenciais. Distribuição individual para tripulação em turnos prolongados.
+            <dl class="food-accordion__meta">
+              <div><dt>Disponível</dt><dd>1.200 un.</dd></div>
+              <div><dt>Origem</dt><dd>Farmácia central</dd></div>
+              <div><dt>Validade</dt><dd>240 dias</dd></div>
+            </dl>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

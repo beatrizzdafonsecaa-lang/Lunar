@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>L.U.N.A.R. | Gestão Inteligente de Recursos</title>
+
+    <!-- GOOGLE FONTS -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/login.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- ========================================
+             COLUNA ESQUERDA
+        ========================================= -->
+
+        <section class="left-side">
+
+            <!-- LOGO -->
+
+            <div class="brand">
+
+                <img
+                    src="imagens/logo atual sem fundo.png"
+                    alt="Logo L.U.N.A.R."
+                    class="logo">
+
+                <div class="brand-text">
+
+                    <h3>
+                        Bem-vindo ao L.U.N.A.R.
+                    </h3>
+
+                    <p>
+                        Localizador e Unificador de Níveis,
+                        Alertas e Recursos
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- LOGIN -->
+
+            <div class="login-wrapper">
+
+                <div class="login-box">
+
+                    <h1>Login</h1>
+
+                    <form>
+
+                        <!-- E-MAIL -->
+
+                        <input
+                            type="email"
+                            placeholder="E-mail"
+                            required>
+
+                        <!-- SENHA -->
+
+                        <div class="password-container">
+
+                            <input
+                                type="password"
+                                placeholder="Senha"
+                                id="senha"
+                                required>
+
+                            <i
+                                class="fa-regular fa-eye"
+                                id="togglePassword">
+                            </i>
+
+                        </div>
+
+                        <!-- OPÇÕES -->
+
+                        <div class="options">
+
+                            <label>
+
+                                <input type="checkbox">
+
+                                lembrar-me
+
+                            </label>
+
+                            <a href="#">
+                                Esqueci a senha
+                            </a>
+
+                        </div>
+
+                        <!-- BOTÃO LOGIN -->
+
+                        <button
+                            type="submit"
+                            class="btn-login">
+
+                            Entrar
+
+                        </button>
+
+                    </form>
+
+                    <!-- DIVISOR -->
+
+                    <div class="divider">
+
+                        <span>
+                            ou continue com
+                        </span>
+
+                    </div>
+
+                    <!-- LOGIN SOCIAL -->
+
+                    <div class="social-buttons">
+
+                        <button
+                            type="button"
+                            class="social-btn">
+
+                            <i class="fa-brands fa-google"></i>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="social-btn">
+
+                            <i class="fa-brands fa-apple"></i>
+
+                        </button>
+
+                    </div>
+
+                    <!-- CADASTRO -->
+
+                    <p class="signup">
+
+                        Novo por aqui?
+
+                        <a href="#">
+                            crie uma conta grátis
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================
+             COLUNA DIREITA
+        ========================================= -->
+
+        <section class="right-side">
+
+            <!-- VÍDEO -->
+
+            <video
+                autoplay
+                muted
+                loop
+                playsinline
+                class="lunar-video">
+
+                <source
+                    src="imagens/astronauta.mp4"
+                    type="video/mp4">
+
+            </video>
+
+            <!-- CAMADA ESCURA -->
+
+            <div class="overlay"></div>
+
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script>
+
+        const togglePassword =
+            document.querySelector("#togglePassword");
+
+        const password =
+            document.querySelector("#senha");
+
+        togglePassword.addEventListener("click", () => {
+
+            const type =
+                password.getAttribute("type") === "password"
+                    ? "text"
+                    : "password";
+
+            password.setAttribute("type", type);
+
+            togglePassword.classList.toggle("fa-eye");
+
+            togglePassword.classList.toggle("fa-eye-slash");
+
+        });
+
+    </script>
+
+</body>
+
+</html>

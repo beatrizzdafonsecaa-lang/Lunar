@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunar — Oxigênio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/oxigenio.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar__section">
+      <p class="sidebar__label">Painel inicial</p>
+      <ul class="sidebar__nav">
+        <li><a href="index.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Dashboard</span></a></li>
+        <li><a href="energia.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>Energia</span></a></li>
+        <li><a href="agua.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg><span>Água</span></a></li>
+        <li><a href="oxigenio.html" class="sidebar__link sidebar__link--active"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/></svg><span>Oxigênio</span></a></li>
+        <li><a href="alimento.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15.4 15.4l4.6 4.6"/><path d="M8.5 8.5l7.9 7.9"/><path d="M6.5 6.5l2 2"/><circle cx="5" cy="5" r="3"/></svg><span>Alimento</span></a></li>
+        <li><a href="ambiente.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg><span>Ambiente</span></a></li>
+      </ul>
+    </div>
+    <div class="sidebar__section">
+      <p class="sidebar__label">Operações</p>
+      <ul class="sidebar__nav">
+        <li><a href="alertas.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>Alertas</span></a></li>
+        <li><a href="mapa.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg><span>Mapa</span></a></li>
+        <li><a href="relatorios.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Relatórios</span></a></li>
+      </ul>
+    </div>
+    <div class="sidebar__logo"><img src="assets/logo-lunar.png" alt="Lunar" class="sidebar__logo-img"></div>
+  </aside>
+
+  <main class="main">
+    <header class="page-header">
+      <h1 class="page-header__title">Oxigênio</h1>
+      <p class="page-header__subtitle">Monitore a qualidade do ar, os níveis de oxigênio e a eficiência dos sistemas de suporte à vida da colônia.</p>
+    </header>
+
+    <section class="o2-metrics">
+      <article class="o2-metric">
+        <div class="o2-metric__top"><span class="o2-metric__label">Oxigênio Atual</span><div class="o2-metric__icon o2-metric__icon--green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2"/></svg></div></div>
+        <div class="o2-metric__value">21.0%</div>
+        <p class="o2-metric__sub o2-metric__sub--green">+2.3% em relação a ontem</p>
+        <svg class="o2-metric__spark" viewBox="0 0 200 28" preserveAspectRatio="none"><polyline points="0,20 40,16 80,18 120,12 160,14 200,10" fill="none" stroke="#10b981" stroke-width="2"/></svg>
+      </article>
+      <article class="o2-metric">
+        <div class="o2-metric__top"><span class="o2-metric__label">Pressão Atmosférica</span><div class="o2-metric__icon o2-metric__icon--purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div></div>
+        <div class="o2-metric__value">101.3 kPa</div>
+        <p class="o2-metric__sub o2-metric__sub--purple">+1.1% em relação a ontem</p>
+        <svg class="o2-metric__spark" viewBox="0 0 200 28" preserveAspectRatio="none"><polyline points="0,18 40,14 80,16 120,10 160,12 200,8" fill="none" stroke="#a855f7" stroke-width="2"/></svg>
+      </article>
+      <article class="o2-metric">
+        <div class="o2-metric__top"><span class="o2-metric__label">Pureza do Ar</span><div class="o2-metric__icon o2-metric__icon--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2"/></svg></div></div>
+        <div class="o2-metric__value">98%</div>
+        <p class="o2-metric__sub o2-metric__sub--blue">+3% em relação a ontem</p>
+        <svg class="o2-metric__spark" viewBox="0 0 200 28" preserveAspectRatio="none"><polyline points="0,22 40,18 80,14 120,16 160,10 200,12" fill="none" stroke="#3b82f6" stroke-width="2"/></svg>
+      </article>
+      <article class="o2-metric">
+        <div class="o2-metric__top"><span class="o2-metric__label">Vapor d'Água</span><div class="o2-metric__icon o2-metric__icon--cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div></div>
+        <div class="o2-metric__value">0.6%</div>
+        <p class="o2-metric__sub">Estável em relação a ontem</p>
+        <svg class="o2-metric__spark" viewBox="0 0 200 28" preserveAspectRatio="none"><polyline points="0,14 40,14 80,15 120,14 160,14 200,14" fill="none" stroke="#22d3ee" stroke-width="2"/></svg>
+      </article>
+      <article class="o2-metric">
+        <div class="o2-metric__top"><span class="o2-metric__label">Autonomia do O₂</span><div class="o2-metric__icon o2-metric__icon--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div></div>
+        <div class="o2-metric__value">18h 30m</div>
+        <p class="o2-metric__sub">Com consumo atual</p>
+      </article>
+    </section>
+
+    <section class="o2-middle">
+      <article class="o2-panel">
+        <h2 class="o2-panel__title">Níveis de O₂ — Últimas 24h</h2>
+        <div class="o2-trend">
+          <svg viewBox="0 0 600 180" preserveAspectRatio="none">
+            <polyline points="0,90 50,88 100,92 150,85 200,87 250,80 300,82 350,78 400,80 450,76 500,78 550,74 600,75" fill="none" stroke="#10b981" stroke-width="3"/>
+            <line x1="0" y1="90" x2="600" y2="90" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="4"/>
+          </svg>
+        </div>
+      </article>
+      <article class="o2-panel">
+        <h2 class="o2-panel__title">Composição do Ar</h2>
+        <div class="o2-composition">
+          <div class="o2-donut" aria-label="21% O2 atual"></div>
+          <div class="o2-legend">
+            <div class="o2-legend__row"><span><i class="o2-legend__dot" style="background:#10b981"></i>Oxigênio (O₂)</span><span>78%</span></div>
+            <div class="o2-legend__row"><span><i class="o2-legend__dot" style="background:#a855f7"></i>Nitrogênio (N₂)</span><span>21%</span></div>
+            <div class="o2-legend__row"><span><i class="o2-legend__dot" style="background:#3b82f6"></i>Vapor d'água (H₂O)</span><span>1%</span></div>
+            <div class="o2-legend__row"><span><i class="o2-legend__dot" style="background:#666"></i>Outros gases</span><span>0%</span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="o2-bottom">
+      <article class="o2-panel">
+        <h2 class="o2-panel__title">Distribuição de Oxigênio</h2>
+        <div class="o2-map">
+          <div class="o2-map__point o2-map__point--1">Habitação<br>21.1%</div>
+          <div class="o2-map__point o2-map__point--2">Laboratórios<br>20.9%</div>
+          <div class="o2-map__point o2-map__point--3">Estufas<br>21.3%</div>
+          <div class="o2-map__point o2-map__point--4">Suporte à Vida<br>21.0%</div>
+        </div>
+      </article>
+      <article class="o2-panel">
+        <h2 class="o2-panel__title">Status da Plataforma</h2>
+        <div class="o2-status-list">
+          <div class="o2-status-row"><span>Gerador de oxigênio</span><span class="o2-status-row__ok">operacional</span></div>
+          <div class="o2-status-row"><span>Filtros de ar</span><span class="o2-status-row__ok">operacional</span></div>
+          <div class="o2-status-row"><span>Umidificadores</span><span class="o2-status-row__ok">operacional</span></div>
+          <div class="o2-status-row"><span>Sensores de O₂</span><span class="o2-status-row__ok">operacional</span></div>
+        </div>
+      </article>
+      <article class="o2-panel">
+        <div class="o2-alerts-header">
+          <h2 class="o2-panel__title" style="margin:0">Alertas de Oxigênio</h2>
+          <a href="alertas.html">ver todas</a>
+        </div>
+        <div class="o2-alert">
+          <div class="o2-alert__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><div class="o2-alert__title">Níveis estáveis</div>Parâmetros dentro do ideal em todos os setores.<div class="o2-alert__time">11:00</div></div>
+        </div>
+        <div class="o2-alert">
+          <div class="o2-alert__icon o2-alert__icon--muted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg></div>
+          <div><div class="o2-alert__title">Manutenção programada</div>Troca de filtros de ar em 20/05 às 20:00.<div class="o2-alert__time">08:30</div></div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

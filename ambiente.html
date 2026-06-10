@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunar — Ambiente</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/ambiente.css">
+</head>
+<body>
+
+  <aside class="sidebar" aria-label="Navegação principal">
+    <div class="sidebar__section">
+      <p class="sidebar__label">Painel inicial</p>
+      <ul class="sidebar__nav">
+        <li><a href="index.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Dashboard</span></a></li>
+        <li><a href="energia.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>Energia</span></a></li>
+        <li><a href="agua.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg><span>Água</span></a></li>
+        <li><a href="oxigenio.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/></svg><span>Oxigênio</span><span class="sidebar__dot sidebar__dot--orange" aria-label="Atenção necessária"></span></a></li>
+        <li><a href="alimento.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15.4 15.4l4.6 4.6"/><path d="M8.5 8.5l7.9 7.9"/><path d="M6.5 6.5l2 2"/><circle cx="5" cy="5" r="3"/></svg><span>Alimento</span></a></li>
+        <li><a href="ambiente.html" class="sidebar__link sidebar__link--active" aria-current="page"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg><span>Ambiente</span><span class="sidebar__dot sidebar__dot--red" aria-label="Alerta crítico"></span></a></li>
+      </ul>
+    </div>
+    <div class="sidebar__section">
+      <p class="sidebar__label">Operações</p>
+      <ul class="sidebar__nav">
+        <li><a href="alertas.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>Alertas</span></a></li>
+        <li><a href="mapa.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg><span>Mapa</span></a></li>
+        <li><a href="relatorios.html" class="sidebar__link"><svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Relatórios</span></a></li>
+      </ul>
+    </div>
+    <div class="sidebar__logo"><img src="assets/logo-lunar.png" alt="Lunar" class="sidebar__logo-img"></div>
+  </aside>
+
+  <main class="main" id="conteudo">
+
+    <header class="env-header">
+      <h1 class="env-header__title">Ambiente</h1>
+      <p class="env-header__subtitle">Monitoramento ambiental para saúde, segurança e desempenho da colônia.</p>
+    </header>
+
+    <!-- KPIs rápidos -->
+    <section class="env-kpis" aria-label="Indicadores ambientais em tempo real">
+
+      <article class="env-kpi">
+        <div class="env-kpi__top">
+          <h2 class="env-kpi__label">Temperatura Interna</h2>
+          <div class="env-kpi__icon env-kpi__icon--green" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg>
+          </div>
+        </div>
+        <p class="env-kpi__value">22.4°C</p>
+        <p class="env-kpi__meta env-kpi__meta--green">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+          +1.2 °C
+        </p>
+        <div class="env-kpi__visual">
+          <svg class="env-kpi__spark" viewBox="0 0 120 28" preserveAspectRatio="none" role="img" aria-label="Tendência de temperatura nas últimas horas">
+            <path d="M0,18 L20,14 L40,16 L60,10 L80,12 L100,8 L120,11" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </article>
+
+      <article class="env-kpi">
+        <div class="env-kpi__top">
+          <h2 class="env-kpi__label">Umidade Relativa</h2>
+          <div class="env-kpi__icon env-kpi__icon--purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+          </div>
+        </div>
+        <p class="env-kpi__value">45%</p>
+        <p class="env-kpi__meta env-kpi__meta--purple">3%</p>
+        <div class="env-kpi__visual">
+          <svg class="env-kpi__spark" viewBox="0 0 120 28" preserveAspectRatio="none" role="img" aria-label="Tendência de umidade">
+            <path d="M0,12 L20,16 L40,10 L60,14 L80,18 L100,12 L120,15" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </article>
+
+      <article class="env-kpi">
+        <div class="env-kpi__top">
+          <h2 class="env-kpi__label">Pressão Interna</h2>
+          <div class="env-kpi__icon env-kpi__icon--blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+        </div>
+        <p class="env-kpi__value">101.1 kPa</p>
+        <p class="env-kpi__meta env-kpi__meta--blue">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          −0.8 kPa
+        </p>
+        <div class="env-kpi__visual">
+          <svg class="env-kpi__spark" viewBox="0 0 120 28" preserveAspectRatio="none" role="img" aria-label="Tendência de pressão">
+            <path d="M0,14 L20,12 L40,15 L60,13 L80,16 L100,14 L120,15" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </article>
+
+      <article class="env-kpi">
+        <div class="env-kpi__top">
+          <h2 class="env-kpi__label">Qualidade do Ar</h2>
+          <div class="env-kpi__icon env-kpi__icon--green" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2"/></svg>
+          </div>
+        </div>
+        <p class="env-kpi__value">92</p>
+        <p class="env-kpi__meta env-kpi__meta--green">Boa</p>
+        <div class="env-kpi__visual">
+          <div class="env-kpi__bars" role="img" aria-label="Índice de qualidade do ar">
+            <div class="env-kpi__bar"></div>
+            <div class="env-kpi__bar"></div>
+            <div class="env-kpi__bar"></div>
+            <div class="env-kpi__bar"></div>
+            <div class="env-kpi__bar"></div>
+            <div class="env-kpi__bar"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="env-kpi">
+        <div class="env-kpi__top">
+          <h2 class="env-kpi__label">Iluminação</h2>
+          <div class="env-kpi__icon env-kpi__icon--yellow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+          </div>
+        </div>
+        <p class="env-kpi__value">350 lux</p>
+        <p class="env-kpi__meta env-kpi__meta--yellow">Ótimo para atividades</p>
+        <div class="env-kpi__visual">
+          <div class="env-kpi__bars" role="img" aria-label="Nível de iluminação">
+            <div class="env-kpi__bar env-kpi__bar--yellow"></div>
+            <div class="env-kpi__bar env-kpi__bar--yellow"></div>
+            <div class="env-kpi__bar env-kpi__bar--yellow"></div>
+            <div class="env-kpi__bar env-kpi__bar--yellow"></div>
+            <div class="env-kpi__bar env-kpi__bar--yellow"></div>
+            <div class="env-kpi__bar env-kpi__bar--yellow"></div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Panorama + Conforto -->
+    <section class="env-middle" aria-label="Análise ambiental detalhada">
+
+      <article class="env-panel">
+        <h2 class="env-panel__title">Panorama Ambiental</h2>
+        <p class="env-panel__subtitle">Últimas 24h</p>
+        <ul class="env-panel__legend" aria-hidden="true">
+          <li><span class="env-panel__legend-dot" style="background:#4ade80"></span>Temperatura</li>
+          <li><span class="env-panel__legend-dot" style="background:#a855f7"></span>Umidade</li>
+          <li><span class="env-panel__legend-dot" style="background:#3b82f6"></span>Pressão</li>
+        </ul>
+        <div class="env-chart-wrap">
+          <svg viewBox="0 0 560 180" role="img" aria-label="Gráfico de temperatura, umidade e pressão nas últimas 24 horas. Às 12:00: temperatura 22.4°C, umidade 45%, pressão 101.1 kPa">
+            <line x1="40" y1="20" x2="40" y2="150" stroke="#2a2a2a" stroke-width="1"/>
+            <line x1="40" y1="150" x2="540" y2="150" stroke="#2a2a2a" stroke-width="1"/>
+            <line x1="40" y1="85" x2="540" y2="85" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="4"/>
+            <line x1="40" y1="50" x2="540" y2="50" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="4"/>
+            <line x1="40" y1="120" x2="540" y2="120" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="4"/>
+            <!-- Marcador 12:00 -->
+            <line x1="300" y1="20" x2="300" y2="150" stroke="#555" stroke-width="1" stroke-dasharray="5 4"/>
+            <text x="300" y="168" text-anchor="middle" fill="#666" font-size="10">12:00</text>
+            <text x="80" y="168" text-anchor="middle" fill="#666" font-size="10">06:00</text>
+            <text x="520" y="168" text-anchor="middle" fill="#666" font-size="10">18:00</text>
+            <!-- Linhas -->
+            <path d="M40,100 C100,90 160,95 220,85 C280,75 340,80 400,70 C460,65 500,72 540,68" fill="none" stroke="#4ade80" stroke-width="2"/>
+            <path d="M40,110 C100,105 160,115 220,100 C280,90 340,95 400,88 C460,82 500,90 540,85" fill="none" stroke="#a855f7" stroke-width="2"/>
+            <path d="M40,75 C100,78 160,72 220,76 C280,70 340,74 400,68 C460,72 500,65 540,70" fill="none" stroke="#3b82f6" stroke-width="2"/>
+            <circle cx="300" cy="78" r="4" fill="#4ade80"/>
+            <circle cx="300" cy="95" r="4" fill="#a855f7"/>
+            <circle cx="300" cy="71" r="4" fill="#3b82f6"/>
+          </svg>
+          <div class="env-chart-tooltip" aria-hidden="true">
+            <strong>12:00</strong>
+            <span class="t-green">Temp: 22.4°C</span>
+            <span class="t-purple">Umidade: 45%</span>
+            <span class="t-blue">Pressão: 101.1 kPa</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="env-panel">
+        <h2 class="env-panel__title">Conforto Ambiental</h2>
+        <p class="env-panel__subtitle">Índice consolidado do módulo habitacional</p>
+        <div class="env-comfort">
+          <div class="env-gauge" role="img" aria-label="Índice de conforto: 84, classificação Bom">
+            <svg viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#4ade80" stroke-width="3"
+                stroke-dasharray="74 88" stroke-linecap="round"/>
+            </svg>
+            <div class="env-gauge__center">
+              <span class="env-gauge__score">84</span>
+              <span class="env-gauge__label">Índice de Conforto</span>
+              <span class="env-gauge__status">Bom</span>
+            </div>
+          </div>
+          <ul class="env-comfort-list">
+            <li class="env-comfort-item">
+              <span class="env-comfort-item__name">Conforto Térmico</span>
+              <span class="env-comfort-item__value">bom</span>
+            </li>
+            <li class="env-comfort-item">
+              <span class="env-comfort-item__name">Qualidade do ar</span>
+              <span class="env-comfort-item__value">boa</span>
+            </li>
+            <li class="env-comfort-item">
+              <span class="env-comfort-item__name">Nível de ruído</span>
+              <span class="env-comfort-item__value env-comfort-item__value--muted">Silencioso</span>
+            </li>
+            <li class="env-comfort-item">
+              <span class="env-comfort-item__name">Iluminação</span>
+              <span class="env-comfort-item__value">Ótima</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Composição, Ruído, Eventos -->
+    <section class="env-bottom" aria-label="Métricas complementares">
+
+      <article class="env-panel env-air">
+        <h2 class="env-panel__title">Composição do Ar</h2>
+        <div class="env-air__content">
+          <div class="env-donut" role="img" aria-label="Composição do ar: Nitrogênio 78.1%, Oxigênio 20.9%, Vapor d'água 0.6%, CO2 0.3%, Outros 0.1%">
+            <svg viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#2a2a2a" stroke-width="4"/>
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#3b82f6" stroke-width="4" stroke-dasharray="68.6 19.4"/>
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#4ade80" stroke-width="4" stroke-dasharray="18.4 69.6" stroke-dashoffset="-68.6"/>
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#a855f7" stroke-width="4" stroke-dasharray="0.5 87.5" stroke-dashoffset="-87"/>
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#facc15" stroke-width="4" stroke-dasharray="0.3 87.7" stroke-dashoffset="-87.5"/>
+              <circle cx="18" cy="18" r="14" fill="none" stroke="#888" stroke-width="4" stroke-dasharray="0.1 87.9" stroke-dashoffset="-87.8"/>
+            </svg>
+            <div class="env-donut__center">
+              <span class="env-donut__value">100%</span>
+              <span class="env-donut__label">Total</span>
+            </div>
+          </div>
+          <ul class="env-air-legend">
+            <li><span class="env-air-legend__left"><span class="env-air-legend__dot" style="background:#3b82f6"></span>Nitrogênio</span><span class="env-air-legend__pct">78.1%</span></li>
+            <li><span class="env-air-legend__left"><span class="env-air-legend__dot" style="background:#4ade80"></span>Oxigênio</span><span class="env-air-legend__pct">20.9%</span></li>
+            <li><span class="env-air-legend__left"><span class="env-air-legend__dot" style="background:#a855f7"></span>Vapor d'água</span><span class="env-air-legend__pct">0.6%</span></li>
+            <li><span class="env-air-legend__left"><span class="env-air-legend__dot" style="background:#facc15"></span>Dióxido de carbono</span><span class="env-air-legend__pct">0.3%</span></li>
+            <li><span class="env-air-legend__left"><span class="env-air-legend__dot" style="background:#888"></span>Outros gases</span><span class="env-air-legend__pct">0.1%</span></li>
+          </ul>
+        </div>
+        <p class="env-status-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Dentro dos limites de seguros
+        </p>
+      </article>
+
+      <article class="env-panel env-noise" aria-labelledby="noise-title">
+        <h2 class="env-panel__title" id="noise-title">Monitoramento de Ruído</h2>
+
+        <div class="noise-card">
+
+          <div class="noise-card__hero">
+            <div class="noise-card__readout" role="status" aria-label="Nível de ruído atual: 42 decibéis, classificação Seguro">
+              <span class="noise-card__value">42</span>
+              <span class="noise-card__unit">dB</span>
+            </div>
+            <span class="noise-card__badge">Seguro</span>
+          </div>
+
+          <div class="noise-card__waves" aria-hidden="true">
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+            <span class="noise-card__wave"></span>
+          </div>
+
+          <div class="noise-card__meter">
+            <div class="noise-card__track" role="img" aria-label="Escala de 0 a 100 decibéis. Nível atual em 42%">
+              <div class="noise-card__zones" aria-hidden="true">
+                <span class="noise-card__zone noise-card__zone--quiet"></span>
+                <span class="noise-card__zone noise-card__zone--moderate"></span>
+                <span class="noise-card__zone noise-card__zone--loud"></span>
+                <span class="noise-card__zone noise-card__zone--critical"></span>
+              </div>
+              <span class="noise-card__marker" style="--pos: 42%" aria-hidden="true"></span>
+            </div>
+            <div class="noise-card__scale-labels" aria-hidden="true">
+              <span>0</span>
+              <span>40</span>
+              <span>60</span>
+              <span>80</span>
+              <span>100+</span>
+            </div>
+          </div>
+
+          <ul class="noise-card__legend">
+            <li><span class="noise-card__dot noise-card__dot--quiet"></span>Silencioso</li>
+            <li><span class="noise-card__dot noise-card__dot--moderate"></span>Moderado</li>
+            <li><span class="noise-card__dot noise-card__dot--loud"></span>Alto</li>
+            <li><span class="noise-card__dot noise-card__dot--critical"></span>Crítico</li>
+          </ul>
+
+        </div>
+
+        <p class="env-status-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Ambiente dentro dos padrões operacionais
+        </p>
+      </article>
+
+      <article class="env-panel env-events">
+        <h2 class="env-panel__title">Eventos Ambientais</h2>
+        <ul class="env-events__list">
+          <li class="env-event">
+            <h3 class="env-event__title">Variação de umidade detectada</h3>
+            <p class="env-event__desc">Sistema de ventilação ajustou automaticamente o fluxo no módulo C3.</p>
+            <time class="env-event__time" datetime="2026-06-01T22:10">Ontem, 22:10</time>
+            <!-- Link para alertas / detalhe do módulo C3 -->
+            <a href="alertas.html" class="env-event__link">Ver em Alertas →</a>
+          </li>
+          <li class="env-event">
+            <h3 class="env-event__title">Calibração de sensores concluída</h3>
+            <p class="env-event__desc">Rotina de manutenção preventiva executada sem interrupções.</p>
+            <time class="env-event__time" datetime="2026-06-01T14:30">Ontem, 14:30</time>
+          </li>
+        </ul>
+      </article>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
